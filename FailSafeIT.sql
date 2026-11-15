@@ -13,7 +13,7 @@ CREATE TABLE dbo.Konsult (
     Namn nvarchar(120) NOT NULL,
     Timpris decimal(10,2) NOT NULL CONSTRAINT CK_Konsult_Timpris CHECK (Timpris > 0),
     Specialitet nvarchar(100) NOT NULL
-);
+)
 
 CREATE TABLE dbo.Uppdrag (
     UppdragID int IDENTITY(1,1) CONSTRAINT PK_Uppdrag PRIMARY KEY,
@@ -101,4 +101,3 @@ WHERE k.Organisationsnummer = '559000-1004'
 SELECT Foretagsnamn
 FROM dbo.Kund
 ORDER BY Foretagsnamn;
-
