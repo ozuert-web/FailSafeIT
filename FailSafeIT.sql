@@ -1,4 +1,4 @@
--- Skapa kund, konsult och uppdrag
+-- Skapa kund, konsult och uppdrag för scriptet
 CREATE TABLE dbo.Kund (
     KundID int IDENTITY(1,1) CONSTRAINT PK_Kund PRIMARY KEY,
     Organisationsnummer char(11) NOT NULL CONSTRAINT UQ_Kund_Organisationsnummer UNIQUE,
